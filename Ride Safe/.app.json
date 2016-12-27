@@ -3,21 +3,73 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "home",
+      "name": "splash",
       "components": [],
-      "title": "Home View",
+      "title": "Splash",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "home",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "email",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Email",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "email",
+                  "placeholder": "Ingresa un email correcto"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "contrasena",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Contraseña",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "password",
+                  "placeholder": "Contraseña"
+                }
+              ],
+              "name": "editableListForm1",
+              "formType": "add"
+            }
+          ],
+          "name": "homeModel",
+          "enableDataBinding": false,
+          "submitButton": "Go ride!"
+        }
+      ],
+      "title": "Iniciar Sesión",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "baseDatos",
+      "source": "everlive",
+      "everliveKey": "it9862gf6meh54pa",
+      "offlineStorage": false,
+      "title": "BD_Ride_Safe"
+    }
+  ],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
-  "view": "home",
-  "transition": "slide",
-  "showMoreTab": true,
+  "navigation": "none",
+  "view": "splash",
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",
-  "skinAccentColor": "#ff4350"
+  "skinAccentColor": "#4daf51"
 }

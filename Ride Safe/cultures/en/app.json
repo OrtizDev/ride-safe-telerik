@@ -4,7 +4,23 @@
     "showMoreTitle": "Show More",
     "qrCodeScan": "Scan"
   },
+  "splash": {
+    "title": "Splash"
+  },
   "home": {
-    "title": "Home View"
+    "title": "Iniciar Sesión",
+    "homeModel": {
+      "submitButton": "Go ride!",
+      "editableListForm1": {
+        "email": {
+          "title": "Email",
+          "placeholder": "Ingresa un email correcto"
+        },
+        "contrasena": {
+          "title": "Contraseña",
+          "placeholder": "Contraseña"
+        }
+      }
+    }
   }
 }
