@@ -4,7 +4,94 @@
     "showMoreTitle": "Show More",
     "qrCodeScan": "Scan"
   },
-  "home": {
+  "homeView": {
     "title": "Home View"
+  },
+  "registerView": {
+    "title": "Register View",
+    "registerViewModel": {
+      "submitButton": "GUARDAR",
+      "editableListForm7": {
+        "registerTitle": {
+          "title": "Heading"
+        },
+        "nombre": {
+          "title": "Nombre",
+          "placeholder": "Type here ..."
+        },
+        "fechaNac": {
+          "title": "Fecha de Nacimiento"
+        },
+        "sexo": {
+          "title": "Sexo"
+        },
+        "celular": {
+          "title": "Teléfono",
+          "placeholder": "Type here ..."
+        },
+        "numEmer": {
+          "title": "En emergencia mandar SMS al número:",
+          "placeholder": "Type here ..."
+        },
+        "motoBrand": {
+          "title": "Marca de motocicleta"
+        },
+        "motoYear": {
+          "title": "Año"
+        },
+        "motoModel": {
+          "title": "Modelo"
+        },
+        "placas": {
+          "title": "Placas",
+          "placeholder": "Type here ..."
+        },
+        "motoUsage": {
+          "title": "Heading"
+        },
+        "cityUse": {
+          "title": "Ciudad"
+        },
+        "atvUse": {
+          "title": "ATV off road"
+        },
+        "touringUse": {
+          "title": "Touring"
+        },
+        "workUse": {
+          "title": "De trabajo"
+        },
+        "circuitsUse": {
+          "title": "Circuitos"
+        },
+        "enduroUse": {
+          "title": "Enduro"
+        },
+        "stuntUse": {
+          "title": "Stunt"
+        },
+        "sporadicUse": {
+          "title": "Carretera esporádico"
+        },
+        "otherUse": {
+          "title": "Otro"
+        },
+        "correo": {
+          "title": "Usuario (e-mail)",
+          "placeholder": "Type here ..."
+        },
+        "contrasena": {
+          "title": "Contraseña",
+          "placeholder": "Type here ..."
+        },
+        "contrasenaValidation": {
+          "title": "Repetir Contraseña",
+          "placeholder": "Type here ..."
+        }
+      }
+    }
+  },
+  "splash": {
+    "title": "Splash"
   }
 }

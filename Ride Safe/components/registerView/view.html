@@ -1,0 +1,274 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.registerView" data-show="app.registerView.onShow" data-after-show="app.registerView.afterShow" id="registerViewScreen" class="screen">
+    <div id="registerViewModel" class="form-view screen__content screen__content--form add-item-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <div id="registerTitleField" class="field field--heading">
+                        <h1>REGISTRO</h1>
+                    </div>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="nombreField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.nombre.title"></span>
+
+
+                        <input id="nombre" data-bind="value: addFormData.nombre" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="fechaNacField" class="field km-listview-label field--date km-label-above">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.fechaNac.title"></span>
+
+
+                        <input id="fechaNac" data-bind="value: addFormData.fechaNac" type="date">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="sexoField" class="field field--drop-down km-label-above">
+
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.sexo.title"></span>
+
+                        <select data-bind="value: addFormData.sexo" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="celularField" class="field km-listview-label field--tel km-label-above">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.celular.title"></span>
+
+
+                        <input id="celular" data-bind="value: addFormData.celular" type="tel">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="numEmerField" class="field km-listview-label field--tel km-label-above">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.numEmer.title"></span>
+
+
+                        <input id="numEmer" data-bind="value: addFormData.numEmer" type="tel">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="motoBrandField" class="field field--drop-down km-label-above">
+
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoBrand.title"></span>
+
+                        <select data-bind="value: addFormData.motoBrand" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="motoYearField" class="field field--drop-down km-label-above">
+
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoYear.title"></span>
+
+                        <select data-bind="value: addFormData.motoYear" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label id="motoModelField" class="field field--drop-down km-label-above">
+
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoModel.title"></span>
+
+                        <select data-bind="value: addFormData.motoModel" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="placasField" class="field km-listview-label field--text km-label-above">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.placas.title"></span>
+
+
+                        <input id="placas" data-bind="value: addFormData.placas" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <div id="motoUsageField" class="field field--heading">
+                        <h3>¿Qué uso le das a tu motocicleta?</h3>
+                    </div>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="cityUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.cityUse.title"></span>
+
+
+                        <input id="cityUse" data-bind="checked: addFormData.cityUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="atvUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.atvUse.title"></span>
+
+
+                        <input id="atvUse" data-bind="checked: addFormData.atvUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="touringUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.touringUse.title"></span>
+
+
+                        <input id="touringUse" data-bind="checked: addFormData.touringUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="workUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.workUse.title"></span>
+
+
+                        <input id="workUse" data-bind="checked: addFormData.workUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="circuitsUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.circuitsUse.title"></span>
+
+
+                        <input id="circuitsUse" data-bind="checked: addFormData.circuitsUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="enduroUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.enduroUse.title"></span>
+
+
+                        <input id="enduroUse" data-bind="checked: addFormData.enduroUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="stuntUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.stuntUse.title"></span>
+
+
+                        <input id="stuntUse" data-bind="checked: addFormData.stuntUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="sporadicUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.sporadicUse.title"></span>
+
+
+                        <input id="sporadicUse" data-bind="checked: addFormData.sporadicUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="otherUseField" class="field km-listview-label field--checkbox">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.otherUse.title"></span>
+
+
+                        <input id="otherUse" data-bind="checked: addFormData.otherUse" type="checkbox">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="correoField" class="field km-listview-label field--text">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.correo.title"></span>
+
+
+                        <input id="correo" data-bind="value: addFormData.correo" type="text">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="contrasenaField" class="field km-listview-label field--password">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.contrasena.title"></span>
+
+
+                        <input id="contrasena" data-bind="value: addFormData.contrasena" type="password">
+
+                    </label>
+                </li>
+                <li class="form-content-item">
+
+
+                    <label id="contrasenaValidationField" class="field km-listview-label field--password">
+                        <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.contrasenaValidation.title"></span>
+
+
+                        <input id="contrasenaValidation" data-bind="value: addFormData.contrasenaValidation" type="password">
+
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a class="primary" data-role="button" data-bind="events: { click: registerViewModel.submit }, buttonText: strings.registerView.registerViewModel.submitButton"></a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_registerViewModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_registerViewModel -->
+    </div>
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.registerView.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_registerView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_registerView -->
+</div>

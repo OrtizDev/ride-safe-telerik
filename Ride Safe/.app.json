@@ -3,17 +3,263 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "home",
+      "name": "homeView",
       "components": [],
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "registerView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "registerTitle",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Heading",
+                  "inputType": "heading",
+                  "headingSize": "h1",
+                  "value": "REGISTRO"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "nombre",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Nombre",
+                  "inputType": "text",
+                  "titlePosition": "top",
+                  "inputTextType": "text",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "fechaNac",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Fecha de Nacimiento",
+                  "inputType": "date",
+                  "titlePosition": "top",
+                  "inputDateType": "date"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "sexo",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Sexo",
+                  "inputType": "dropdownlist",
+                  "titlePosition": "top"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "celular",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Teléfono",
+                  "inputType": "text",
+                  "titlePosition": "top",
+                  "inputTextType": "tel",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "numEmer",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "En emergencia mandar SMS al número:",
+                  "inputType": "text",
+                  "titlePosition": "top",
+                  "inputTextType": "tel",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "motoBrand",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Marca de motocicleta",
+                  "inputType": "dropdownlist",
+                  "titlePosition": "top"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "motoYear",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Año",
+                  "inputType": "dropdownlist",
+                  "titlePosition": "top"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "motoModel",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Modelo",
+                  "inputType": "dropdownlist",
+                  "titlePosition": "top"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "placas",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Placas",
+                  "inputType": "text",
+                  "titlePosition": "top",
+                  "inputTextType": "text",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "motoUsage",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Heading",
+                  "inputType": "heading",
+                  "headingSize": "h3",
+                  "value": "¿Qué uso le das a tu motocicleta?"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "cityUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Ciudad",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "atvUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "ATV off road",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "touringUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Touring",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "workUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "De trabajo",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "circuitsUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Circuitos",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "enduroUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Enduro",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "stuntUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Stunt",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "sporadicUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Carretera esporádico",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "otherUse",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Otro",
+                  "inputType": "checkbox"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "correo",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Usuario (e-mail)",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "text",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "contrasena",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Contraseña",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "password",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "contrasenaValidation",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Repetir Contraseña",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "password",
+                  "placeholder": "Type here ..."
+                }
+              ],
+              "name": "editableListForm7",
+              "formType": "add"
+            }
+          ],
+          "name": "registerViewModel",
+          "enableDataBinding": false,
+          "submitButton": "GUARDAR"
+        }
+      ],
+      "title": "Register View",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "splash",
+      "components": [],
+      "title": "Splash",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
-  "view": "home",
+  "view": "homeView",
   "transition": "slide",
   "showMoreTab": true,
   "skin": "nova",
