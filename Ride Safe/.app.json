@@ -8,51 +8,6 @@
       "title": "Splash",
       "addToNavigation": true,
       "icon": "home"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "home",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:form",
-          "components": [
-            {
-              "type": "kendo-ui-mobile:editableListForm",
-              "components": [
-                {
-                  "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "email",
-                  "dataBindingRelationChildren": "[]",
-                  "dataBindingMultipleSelectChildren": "[]",
-                  "title": "Email",
-                  "inputType": "text",
-                  "titlePosition": "left",
-                  "inputTextType": "email",
-                  "placeholder": "Ingresa un email correcto"
-                },
-                {
-                  "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "contrasena",
-                  "dataBindingRelationChildren": "[]",
-                  "dataBindingMultipleSelectChildren": "[]",
-                  "title": "Contraseña",
-                  "inputType": "text",
-                  "titlePosition": "left",
-                  "inputTextType": "password",
-                  "placeholder": "Contraseña"
-                }
-              ],
-              "name": "editableListForm1",
-              "formType": "add"
-            }
-          ],
-          "name": "homeModel",
-          "enableDataBinding": false,
-          "submitButton": "Go ride!"
-        }
-      ],
-      "title": "Iniciar Sesión",
-      "addToNavigation": false
     }
   ],
   "dataProviders": [
