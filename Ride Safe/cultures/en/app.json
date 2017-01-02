@@ -93,5 +93,21 @@
   },
   "splash": {
     "title": "Splash"
+  },
+  "loginf": {
+    "title": "Login",
+    "loginfModel": {
+      "emailLabel": "correo",
+      "emailPlaceholder": "Correo",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "contrasena",
+      "signinLabel": "Sign In",
+      "gotoRegisterLabel": "Register",
+      "registerEmailLabel": "Email",
+      "registerPasswordLabel": "Password",
+      "registerNameLabel": "Name",
+      "registerLabel": "Register",
+      "gotoSigninLabel": "Sign In"
+    }
   }
 }

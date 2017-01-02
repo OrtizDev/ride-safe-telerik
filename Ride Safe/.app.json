@@ -254,9 +254,47 @@
       "components": [],
       "title": "Splash",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "loginf",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "loginfModel",
+          "dataProvider": "backendServices",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "homeView",
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": false,
+          "enableRememberme": false,
+          "emailLabel": "correo",
+          "emailPlaceholder": "Correo",
+          "passwordLabel": "Password",
+          "passwordPlaceholder": "contrasena",
+          "signinLabel": "Sign In",
+          "signinRedirect": "homeView"
+        }
+      ],
+      "title": "Login",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "it9862gf6meh54pa",
+      "offlineStorage": true,
+      "title": "Backend Services"
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "homeView",
