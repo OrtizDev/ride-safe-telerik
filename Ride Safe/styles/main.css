@@ -590,7 +590,18 @@ Fields
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 
+#kendoUiMobileApp #registerViewScreen {
+    background-color: #3F3F3E;
+}
 
+#splashScreen {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url('img/road.jpg');
+    background-size: cover;
+}
 /* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 
 
