@@ -3,22 +3,22 @@
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li class="form-content-item">
-                    <div id="registerTitleField" class="field field--heading">
+                    <div id="registerTitleField" class="field field--heading text-center">
                         <h1>REGISTRO</h1>
+                        <hr class="col-xs-6 col-xs-offset-3">
                     </div>
                 </li>
                 <li class="form-content-item">
 
 
-                    <label id="nombreField" class="field km-listview-label field--text km-label-above">
+                    <label id="nombreField" class="field km-listview-label field--text km-label-above text-center">
                         <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.nombre.title"></span>
-
 
                         <input id="nombre" data-bind="value: addFormData.nombre" type="text">
 
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-3">
 
 
                     <label id="fechaNacField" class="field km-listview-label field--date km-label-above">
@@ -29,7 +29,7 @@
 
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-4">
                     <label id="sexoField" class="field field--drop-down km-label-above">
 
                         <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.sexo.title"></span>
@@ -41,7 +41,7 @@
                         </select>
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-4">
 
 
                     <label id="celularField" class="field km-listview-label field--tel km-label-above">
@@ -52,7 +52,7 @@
 
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-12">
 
 
                     <label id="numEmerField" class="field km-listview-label field--tel km-label-above">
@@ -63,7 +63,7 @@
 
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-7">
                     <label id="motoBrandField" class="field field--drop-down km-label-above">
 
                         <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoBrand.title"></span>
@@ -75,7 +75,7 @@
                         </select>
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-4">
                     <label id="motoYearField" class="field field--drop-down km-label-above">
 
                         <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoYear.title"></span>
@@ -87,7 +87,7 @@
                         </select>
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-7">
                     <label id="motoModelField" class="field field--drop-down km-label-above">
 
                         <span class="field__label" data-bind="text: strings.registerView.registerViewModel.editableListForm7.motoModel.title"></span>
@@ -99,7 +99,7 @@
                         </select>
                     </label>
                 </li>
-                <li class="form-content-item">
+                <li class="form-content-item col-xs-4">
 
 
                     <label id="placasField" class="field km-listview-label field--text km-label-above">
@@ -250,7 +250,7 @@
             </ul>
 
             <div class="button-group">
-                <a class="primary" data-role="button" data-bind="events: { click: registerViewModel.submit }, buttonText: strings.registerView.registerViewModel.submitButton"></a>
+                <a class="btn btn-primary" data-role="button" data-bind="events: { click: registerViewModel.submit }, buttonText: strings.registerView.registerViewModel.submitButton"></a>
             </div>
         </form>
         <!-- START_CUSTOM_CODE_registerViewModel -->

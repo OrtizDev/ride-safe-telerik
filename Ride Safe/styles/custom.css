@@ -1,3 +1,30 @@
-#kendoUiMobileApp #registerViewScreen {
+#kendoUiMobileApp #registerViewScreen #registerViewModel{
     background-color: #3F3F3E;
+}
+
+#kendoUiMobileApp #registerViewScreen #registerViewModel h1 {
+    color: #fff;
+    font-family: sans-serif; 
+    font-weight: lighter;
+}
+
+#kendoUiMobileApp #registerViewScreen #registerViewModel hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#kendoUiMobileApp #registerViewScreen #registerViewModel li {
+    border: none;
+}
+
+#kendoUiMobileApp #registerViewScreen #registerViewModel input {
+    border-bottom: 1px solid #fff;
+}
+
+#kendoUiMobileApp #registerViewScreen #registerViewModel select {
+    border-bottom: 1px solid #fff;
+}
+
+#kendoUiMobileApp #splashScreen #splashViewModel {
+    background-color: #4D4D4C;
 }
