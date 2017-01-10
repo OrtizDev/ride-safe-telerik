@@ -254,6 +254,34 @@
       "components": [],
       "title": "Splash",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "authenticationView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "backendServices",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "+Registrarme",
+          "registerEmailLabel": "correo",
+          "registerPasswordLabel": "Contraseña",
+          "registerNameLabel": "Nombre",
+          "registerLabel": "Guardar",
+          "registerRedirect": "homeView",
+          "gotoSigninLabel": "Ya tengo una cuenta",
+          "enableLogout": false,
+          "enableRememberme": false,
+          "emailLabel": "Correo",
+          "emailPlaceholder": "correo",
+          "passwordLabel": "contraseña",
+          "signinLabel": "Go ride!",
+          "signinRedirect": "homeView"
+        }
+      ],
+      "title": "Login-Register",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [
