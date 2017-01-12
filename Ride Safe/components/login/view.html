@@ -1,0 +1,67 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.login" data-show="app.login.onShow" data-after-show="app.login.afterShow" id="loginScreen" class="screen">
+    <div id="loginModel" class="form-view screen__content screen__content--form add-item-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+
+                    <div id="logoField" class="field field--image imageListItem km-label-above">
+
+                        <div class="align-center field__content">
+
+
+                            <img id="logo" src="resources/Logo-Negro 1024x1024.png">
+
+
+                        </div>
+                    </div>
+                </li>
+                <li class="form-content-item input-padding inner-addon left-addon">
+
+
+                    <label id="emailField" class="field km-listview-label field--email km-label-above km-label-hidden form-control no-bordered">
+                        &nbsp;
+
+                        <i class="glyphicon"><img class="input-icon" src="./styles/img/icons/usuario.png"></i>
+                        <input id="email" data-bind="value: addFormData.email" type="email">
+
+                    </label>
+                </li>
+                <li class="form-content-item input-padding">
+
+
+                    <label id="passwordField" class="field km-listview-label field--password km-label-above km-label-hidden form-control no-bordered">
+                        &nbsp;
+
+                         <i class="glyphicon"><img class="input-icon" src="./styles/img/icons/password.png"></i>
+                        <input id="password" data-bind="value: addFormData.password" type="password">
+
+                    </label>
+                </li>
+            </ul>
+            <div class="button-group">
+                <a class="col-xs-10 col-xs-offset-1 button-paddin bg-green" data-role="button" data-bind="events: { click: loginModel.submit }, buttonText: strings.login.loginModel.submitButton"></a>
+                <a class="col-xs-6 col-xs-offset-6 button-paddin" data-role="button" data-bind="events: { click: loginModel.cancel }, buttonText: strings.login.loginModel.cancelButton"></a>
+            </div>
+        </form>
+
+        <!-- START_CUSTOM_CODE_loginModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_loginModel -->
+
+    </div>
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-bind="text: strings.login.title"></span>
+
+        </div>
+    </header>
+
+
+    <!-- START_CUSTOM_CODE_login -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_login -->
+</div>

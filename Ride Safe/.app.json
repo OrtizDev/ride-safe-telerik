@@ -257,31 +257,61 @@
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "authenticationView",
+      "name": "login",
       "components": [
         {
-          "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationViewModel",
-          "dataProvider": "backendServices",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "+Registrarme",
-          "registerEmailLabel": "correo",
-          "registerPasswordLabel": "Contraseña",
-          "registerNameLabel": "Nombre",
-          "registerLabel": "Guardar",
-          "registerRedirect": "homeView",
-          "gotoSigninLabel": "Ya tengo una cuenta",
-          "enableLogout": false,
-          "enableRememberme": false,
-          "emailLabel": "Correo",
-          "emailPlaceholder": "correo",
-          "passwordLabel": "contraseña",
-          "signinLabel": "Go ride!",
-          "signinRedirect": "homeView"
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "logo",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "logo",
+                  "inputType": "image",
+                  "titlePosition": "hidden",
+                  "alignment": "center",
+                  "imageUpload": "Logo-Negro 1024x1024.png"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "email",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "correo",
+                  "inputType": "text",
+                  "titlePosition": "hidden",
+                  "inputTextType": "email",
+                  "placeholder": "Type here ..."
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "password",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "contraseña",
+                  "inputType": "text",
+                  "titlePosition": "hidden",
+                  "inputTextType": "password",
+                  "placeholder": "Type here ..."
+                }
+              ],
+              "name": "editableListForm10",
+              "formType": "add"
+            }
+          ],
+          "name": "loginModel",
+          "enableDataBinding": false,
+          "submitButton": "Go ride!",
+          "cancelButton": "+Registrarme"
         }
       ],
-      "title": "Login-Register",
-      "addToNavigation": false
+      "title": "Login View",
+      "addToNavigation": true,
+      "icon": "contacts"
     }
   ],
   "dataProviders": [
