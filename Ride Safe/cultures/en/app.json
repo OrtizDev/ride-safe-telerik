@@ -94,19 +94,24 @@
   "splash": {
     "title": "Splash"
   },
-  "authenticationView": {
-    "title": "Login-Register",
-    "authenticationViewModel": {
-      "emailLabel": "Correo",
-      "emailPlaceholder": "correo",
-      "passwordLabel": "contraseña",
-      "signinLabel": "Go ride!",
-      "gotoRegisterLabel": "+Registrarme",
-      "registerEmailLabel": "correo",
-      "registerPasswordLabel": "Contraseña",
-      "registerNameLabel": "Nombre",
-      "registerLabel": "Guardar",
-      "gotoSigninLabel": "Ya tengo una cuenta"
+  "login": {
+    "title": "Login View",
+    "loginModel": {
+      "submitButton": "Go ride!",
+      "cancelButton": "+Registrarme",
+      "editableListForm10": {
+        "email": {
+          "title": "correo",
+          "placeholder": "Type here ..."
+        },
+        "password": {
+          "title": "contraseña",
+          "placeholder": "Type here ..."
+        },
+        "logo": {
+          "title": "logo"
+        }
+      }
     }
   }
 }
