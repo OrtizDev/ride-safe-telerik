@@ -1,3 +1,19 @@
+
+/* LOGIN VIEW */
+
+#kendoUiMobileApp #loginScreen #loginModel {
+    background: url(img/moto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: fixed;
+}
+
+#kendoUiMobileApp #loginScreen #loginModel #logo {
+	width: 70%;
+}
+
+/* REGISTER VIEW */
+
 #kendoUiMobileApp #registerViewScreen #registerViewModel{
     background-color: #3F3F3E;
 }
