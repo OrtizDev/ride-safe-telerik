@@ -9,20 +9,20 @@
 
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="styles/custom.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
-    <script src="bootstrap.min.js"></script>
     <script src="bower_components/everlive/min/everlive.all.min.js"></script>
     <script src="dataProviders/backendServices.js"></script>
+    <script src="bootstrap.min.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
-    <script src="components/authenticationView/index.js"></script>
+    <script src="components/login/index.js"></script>
     <script src="components/splash/index.js"></script>
     <script src="components/registerView/index.js"></script>
     <script src="components/homeView/index.js"></script>
@@ -36,6 +36,7 @@
             <div data-role="tabstrip" id="navigation-container">
                 <a href="components/homeView/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.homeView.title"></span></a>
                 <a href="components/registerView/view.html" data-icon="bookmarks"><span class="navigation-link-text" data-bind="text: strings.registerView.title"></span></a>
+                <a href="components/login/view.html" data-icon="contacts"><span class="navigation-link-text" data-bind="text: strings.login.title"></span></a>
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>
