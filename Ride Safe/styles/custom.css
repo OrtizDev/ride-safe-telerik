@@ -1,4 +1,3 @@
-
 /* LOGIN VIEW */
 
 #kendoUiMobileApp #loginScreen #loginModel {
@@ -13,7 +12,8 @@
 }
 
 #kendoUiMobileApp #loginScreen #loginModel form .form-content .input-padding {
-    padding: 1.09em .84em 2.23em .84em;
+    padding: 1em 0em 2em 1em;
+    margin: 0em 1em 0em 1em;
 }
 
 #kendoUiMobileApp #loginScreen #loginModel form .form-content .no-bordered {

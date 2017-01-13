@@ -100,6 +100,9 @@
       "submitButton": "Go ride!",
       "cancelButton": "+Registrarme",
       "editableListForm10": {
+        "logo": {
+          "title": "logo"
+        },
         "email": {
           "title": "correo",
           "placeholder": "Type here ..."
@@ -107,9 +110,6 @@
         "password": {
           "title": "contraseña",
           "placeholder": "Type here ..."
-        },
-        "logo": {
-          "title": "logo"
         }
       }
     }
